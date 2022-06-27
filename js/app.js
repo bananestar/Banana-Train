@@ -60,7 +60,7 @@ const sendRequestData = async (station) => {
     displayResult.textContent = error;
   }
 };
-
+//! Request train
 const sendRequestTrain = async (train,station) => {
   const URL = `https://api.irail.be/vehicle/?id=${train}&format=json`;
   try {
@@ -73,6 +73,7 @@ const sendRequestTrain = async (train,station) => {
   }
 };
 
+//! Display station
 const printResult = (station) => {
   const titleEl = document.createElement("h3");
 
@@ -128,6 +129,7 @@ const printResult = (station) => {
   }
 };
 
+//! Display Stops
 const printStop = (train,gare) => {
   console.log(train);
 
@@ -147,6 +149,8 @@ const printStop = (train,gare) => {
   }
 };
 
+
+//! Function convert timestamp
 function convertTimestamp(timestamp) {
   let date = new Date(timestamp * 1000);
   let hours = date.getHours();
