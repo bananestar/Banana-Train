@@ -3,3 +3,15 @@
  *
  * Copyright (c) 2022 Simon Vander Linden
  */
+
+ #info{
+    background-color: chocolate;
+    border: 2px solid;
+ }
+
+a {
+    color: #212529;
+    text-decoration: underline;
+ }
+
+ 

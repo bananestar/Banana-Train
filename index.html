@@ -13,7 +13,12 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -37,9 +42,10 @@
         />
         <button type="submit" class="btn btn-dark">Search</button>
       </form>
-      <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Icon_train.svg" alt=""> -->
-        <div id="displayResult" class="mt-4"></div>
-
+      <br />
+      <button id="refresh" class="btn btn-info">Refresh</button>
+      <div id="displayResult" class="mt-4"></div>
+      <div id="info" class="mt-4 rounded border-dark" ></div>
     </div>
 
     <script src="js/app.js"></script>
